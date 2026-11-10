@@ -29,9 +29,3 @@ A simple and responsive web application that converts any selected date and time
 **Note:** The timestamp is calculated based on your browser's local timezone.
 
 Users in different time zones may receive different Epoch values for the same displayed date and time.
-
-## 📸 Preview
-
-![Epoch Time Converter Preview](./preview.png)
-
----
