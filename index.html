@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assests/clock_check_transparent.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Epoch Timestamp</title>
+
+    <style>
+
+    #lab {
+        width: 40px;
+       }
+    
+    input {
+        height: 30px;
+        padding: 12px;
+        margin: 10px 0;
+        box-sizing: border-box;
+    }
+
+    button {
+        background: linear-gradient(135deg, #22c55e, #15803d);
+        color: white;
+        border: none;
+        padding: 8px 8px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(34, 197, 94, 0.25);
+    }
+
+    .button-green:hover {
+        background: linear-gradient(135deg, #16a34a, #166534);
+        transform: translateY(-2px);
+        box-shadow: 0 6px 16px rgba(34, 197, 94, 0.35);
+        cursor: pointer;
+
+    }
+
+    /* Mobile devices */
+    @media screen and (max-width: 480px) {
+
+    }
+    
+    /* Tablets */
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    }
+    
+    /* Laptops */
+    @media screen and (min-width: 1025px) and (max-width: 1440px) {
+
+    }
+    
+    /* Large desktops */
+    @media screen and (min-width: 1441px) {
+
+    }
+    .alert {
+    padding: 8px 12px !important;
+    margin: 10px 0 !important;
+    border: 1px solid transparent !important;}
+
+
+
+    </style>
+
+    <script src="./script.js"></script>
+    
+
+</head>
+<body style="text-align:center">
+
+<!--Epoch Timestamp Form-->
+    
+<h1><img src="./assests/clock_arrow_transparent.png" style="height: 45px; width: 45px;"> Epoch Timestamp</h1>
+    
+
+    <div id="epochForm">
+    <form>
+        <label for="Time" id="lab"><b>Time</b></label><br>
+        <input type="datetime-local" id="time" name="Time"><br>
+        <button type="button" class="button-green" onclick="getEpochTime()">📋Submit</button>
+    </form>
+    
+    <!-- Result Display -->
+    <p id="result"><b>Submit a date and time to see the epoch timestamp.</b></p>
+
+    </div>
+    <div class="alert alert-warning">
+        <strong>Note:</strong><p>The epoch timestamp is calculated based on your device's local timezone.</p></div>
+
+</body>
+</html>
